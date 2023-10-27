@@ -34,6 +34,11 @@ function sumNumbers(a,b = 10){
 let total = sumNumbers(2);
 // console.log(total);
 
+// this is the IIFE (immediate invoked function expression)
+(function getName(){
+    console.log("hello world!");
+}()) 
+
 //---------- Parameters and Arguments------------
 
 //  Parameters are basically the input values.

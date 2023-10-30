@@ -6,7 +6,6 @@
 
 // The benefit of using function is its resuseablity means we put some code that is common in our source code and we can call the function later on whenever we need it.
 
-
 // The return keyword is generally used at the end of a function when we want to return the result outside back of function from where it is called. after the return keyword anything written down is not gonna work ina function.
 
 // Syntax:
@@ -15,29 +14,29 @@
 // }
 //------------------Function------------------
 
-function myName(){
-    console.log("John Wick");
+function myName() {
+  console.log("John Wick");
 }
 // myName();
 // myName();
 // myName();
 
-function mul(x,y){
-    return x*y;
+function mul(x, y) {
+  return x * y;
 }
 // mul(5,5);
 
-function sumNumbers(a,b = 10){
-    return a + b;
+function sumNumbers(a, b = 10) {
+  return a + b;
 }
 
 let total = sumNumbers(2);
 // console.log(total);
 
 // this is the IIFE (immediate invoked function expression)
-(function getName(){
-    console.log("hello world!");
-}()) 
+(function getName() {
+  console.log("hello world!");
+})();
 
 //---------- Parameters and Arguments------------
 
@@ -48,11 +47,8 @@ let total = sumNumbers(2);
 
 // These terms are ofton used interchangeably so dont get confused but technically that is the difference.
 
-
 // we can also provide default values to parameters when an argument is not passed.
 //---------- Parameters and Arguments------------
-
-
 
 // ----------- SCOPES------------
 
@@ -65,3 +61,14 @@ let total = sumNumbers(2);
 //  var => var it has a local and Global scope unlike its is available because it does not have block scope. mostly used let and const.
 
 // ---------- SCOPES-------------
+
+// --------- IIFE OR IIFY-------------
+
+// An Immediately Invoked Function  known as IIFE and pronounced as IIFY is a
+// function that runs as soon as it is defined.
+
+// --------- IIFE OR IIFY-------------
+
+(function () {
+  console.log("welcome to iife");
+})();
